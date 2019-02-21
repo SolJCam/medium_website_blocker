@@ -36,6 +36,7 @@ while True:
         for line in content:
             if not(website in line for website in website_list):
                 file.write(line)
+            # truncates the file's size by removing either the top or end empty lines
             file.truncate()
     time.sleep(5)
 
