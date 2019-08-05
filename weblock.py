@@ -19,7 +19,7 @@ while True:
         print("Rihanna")
         #Open file and read the content; also "file" is not a python keyword but rather an object returned by open(). Removed from python3?
         file = open(host_path, "r+")
-        content = file.read
+        content = file.read()
         for website in website_list:
             if website in content:
                 pass #used when a statement is required syntactically but you do not want any command or code to execute.
